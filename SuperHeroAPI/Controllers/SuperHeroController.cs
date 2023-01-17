@@ -65,7 +65,7 @@ namespace SuperHeroAPI.Controllers
             var dbHero = await _context.SuperHeroes.FindAsync(id);
 
             if (dbHero == null)
-                return BadRequest("Hero not Found.");
+                return BadRequest("Hero not Found.");   
 
             _context.SuperHeroes.Remove(dbHero);
 
